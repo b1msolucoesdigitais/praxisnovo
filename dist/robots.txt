@@ -1,0 +1,35 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sejapraxis.com.br/sitemap.xml
+
+# Crawl-delay para respeitar o servidor
+Crawl-delay: 1
+
+# Permitir indexação de todas as páginas
+Allow: /src/
+Allow: /components/
+Allow: /assets/
+
+# Bloquear arquivos desnecessários
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /dist/
+Disallow: /build/
+Disallow: /coverage/
+Disallow: /tests/
+Disallow: /docs/
+
+# Permitir acesso a recursos importantes
+Allow: /*.js
+Allow: /*.css
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+Allow: /*.ico
+Allow: /*.xml
+Allow: /*.txt
