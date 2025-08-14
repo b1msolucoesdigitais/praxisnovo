@@ -8,6 +8,7 @@ import {
 } from "./ui/dialog";
 import { Button } from "./ui/button";
 import { Phone, Mail, MapPin } from "lucide-react";
+import { whatsappConfig, companyConfig } from "../lib/config";
 
 interface ContactModalProps {
   children: React.ReactNode;
@@ -51,7 +52,7 @@ export default function ContactModal({ children }: ContactModalProps) {
 
 Vim através do site da PRAXIS.`;
 
-    const whatsappUrl = `https://wa.me/5531997150237?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = whatsappConfig.getWhatsAppLink();
     window.open(whatsappUrl, '_blank');
   };
 
@@ -190,14 +191,14 @@ Vim através do site da PRAXIS.`;
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone size={18} className="text-emerald-400" />
-                <a href="tel:+5531997150237" className="text-gray-300 hover:text-white">
-                  (31) 99715-0237
+                <a href={`tel:+55${whatsappConfig.phone}`} className="text-gray-300 hover:text-white">
+                  {whatsappConfig.formattedPhone}
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={18} className="text-emerald-400" />
-                <a href="mailto:contato@sejapraxis.com.br" className="text-gray-300 hover:text-white">
-                  contato@sejapraxis.com.br
+                <a href={`mailto:${companyConfig.email}`} className="text-gray-300 hover:text-white">
+                  {companyConfig.email}
                 </a>
               </div>
               <div className="flex items-start gap-3">

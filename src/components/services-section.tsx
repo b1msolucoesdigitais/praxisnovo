@@ -2,6 +2,7 @@ import React from "react";
 import { Card, CardContent } from "./ui/card";
 import { BarChart3, Target, Shield, TrendingUp, Calculator, FileText, Users, Zap } from "lucide-react";
 import { Button } from "./ui/button";
+import WhatsAppButton from "./ui/whatsapp-button";
 
 export default function ServicesSection() {
   const mainServices = [
@@ -9,21 +10,21 @@ export default function ServicesSection() {
       icon: BarChart3,
       title: "Controladoria Financeira Completa",
       description: "Estruturação de processos financeiros com foco em controle de custos, margem de contribuição e análise de rentabilidade por produto/cliente.",
-      features: ["Controle de custos por centro", "Análise de margem", "Precificação estratégica"],
+      features: ["Controle de custos", "Análise de margens", "Gestão Financeira Estratégica"],
       color: "from-emerald-500 to-emerald-600"
     },
     {
       icon: Target,
       title: "Planejamento & Orçamento",
       description: "Desenvolvimento de orçamentos anuais, planejamento estratégico financeiro e acompanhamento de metas com indicadores de performance.",
-      features: ["Orçamento anual", "Planejamento estratégico", "KPIs personalizados"],
+      features: ["Orçamento anual", "Centro de Resultados", "Previsibilidade"],
       color: "from-blue-500 to-blue-600"
     },
     {
       icon: Shield,
       title: "Gestão de Riscos Financeiros",
       description: "Identificação e mitigação de riscos financeiros, controle de fluxo de caixa e estruturação de reservas para crescimento sustentável.",
-      features: ["Análise de riscos", "Fluxo de caixa", "Reservas estratégicas"],
+      features: ["Análise de riscos", "Fluxo de caixa otimizado", "Controle inteligente de Capital de Giro (NCG)"],
       color: "from-purple-500 to-purple-600"
     }
   ];
@@ -32,22 +33,22 @@ export default function ServicesSection() {
     {
       icon: TrendingUp,
       title: "Business Intelligence",
-      description: "Dashboards executivos e relatórios gerenciais automatizados"
+      description: "Dashboards executivos e relatórios gerenciais personalizados"
     },
     {
       icon: Calculator,
-      title: "Análise de Viabilidade",
-      description: "Estudos de viabilidade para novos projetos e investimentos"
+      title: "Análise de Margens",
+      description: "Estudo de rentabilidade e lucratividade"
     },
     {
       icon: FileText,
-      title: "Compliance Financeiro",
-      description: "Adequação às normas contábeis e fiscais específicas do setor"
+      title: "Planejamento Financeiro",
+      description: "Projeção de cenários e controle de risco"
     },
     {
       icon: Users,
       title: "Treinamento de Equipes",
-      description: "Capacitação da equipe interna em controles financeiros"
+      description: "Capacitação, Procedimentos e Auditoria interna"
     }
   ];
 
@@ -104,7 +105,7 @@ export default function ServicesSection() {
 
         {/* Serviços Adicionais */}
         <div className="bg-gradient-to-r from-gray-900/50 to-black/50 rounded-3xl p-8 lg:p-12 border border-gray-700/50 backdrop-blur-sm">
-          <h3 className="text-3xl font-bold text-white mb-8 text-center">Serviços Complementares</h3>
+          <h3 className="text-3xl font-bold text-white mb-8 text-center">Método + Inteligência em Gestão</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {additionalServices.map((service, index) => (
               <div key={index} className="text-center group hover:bg-gray-800/30 p-6 rounded-xl transition-colors">
@@ -127,12 +128,12 @@ export default function ServicesSection() {
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
               Agende uma conversa com nossos especialistas e descubra como podemos ajudar sua empresa a crescer com segurança financeira.
             </p>
-            <Button 
+            <WhatsAppButton 
               size="lg" 
               className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-8"
             >
               Quero uma consultoria
-            </Button>
+            </WhatsAppButton>
           </div>
         </div>
       </div>

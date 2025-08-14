@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "./ui/button";
-import { TrendingUp, Shield, FileText, Calculator, ArrowRight, CheckCircle } from "lucide-react";
-import ContactModal from "./contact-modal";
+import { TrendingUp, Shield, FileText, Calculator, ArrowRight, CheckCircle, Settings, Users } from "lucide-react";
+import WhatsAppButton from "./ui/whatsapp-button";
 
 export default function HeroSection() {
   return (
@@ -35,15 +35,13 @@ export default function HeroSection() {
             </div>
 
             <div>
-              <ContactModal>
-                <Button 
-                  size="lg" 
-                  className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-4 text-lg shadow-lg shadow-emerald-500/25 group"
-                >
-                  Quero uma consultoria
-                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-                </Button>
-              </ContactModal>
+              <WhatsAppButton 
+                size="lg" 
+                className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-4 text-lg shadow-lg shadow-emerald-500/25 group"
+              >
+                Quero uma consultoria
+                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+              </WhatsAppButton>
             </div>
 
             {/* Indicadores com melhor design */}
@@ -62,9 +60,9 @@ export default function HeroSection() {
               </div>
               <div className="text-center group">
                 <div className="text-3xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-400 group-hover:scale-110 transition-transform">
-                  35%
+                  20%
                 </div>
-                <div className="text-sm text-gray-400 font-medium">Aumento médio de lucro</div>
+                <div className="text-sm text-gray-400 font-medium">Aumento médio de margens</div>
               </div>
             </div>
           </div>
@@ -91,6 +89,16 @@ export default function HeroSection() {
                   </div>
                   
                   <div className="flex items-start gap-4 group hover:bg-gray-800/50 p-4 rounded-xl transition-colors">
+                    <div className="w-14 h-14 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                      <Settings className="text-white" size={24} />
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-white font-semibold text-lg">Procedimentos Operacionais</h4>
+                      <p className="text-gray-400 text-sm leading-relaxed">Treinamento e preparação dos usuários</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4 group hover:bg-gray-800/50 p-4 rounded-xl transition-colors">
                     <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                       <TrendingUp className="text-white" size={24} />
                     </div>
@@ -99,7 +107,7 @@ export default function HeroSection() {
                       <p className="text-gray-400 text-sm leading-relaxed">Estruturação de processos e indicadores personalizados</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-4 group hover:bg-gray-800/50 p-4 rounded-xl transition-colors">
                     <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                       <Shield className="text-white" size={24} />

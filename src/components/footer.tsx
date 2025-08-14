@@ -1,6 +1,7 @@
 import React from "react";
 import { Mail, Phone, MapPin, Linkedin, Instagram, Facebook, Youtube } from "lucide-react";
-import ContactModal from "./contact-modal";
+import WhatsAppButton from "./ui/whatsapp-button";
+import { whatsappConfig, companyConfig } from "../lib/config";
 
 export default function Footer() {
   return (
@@ -47,14 +48,6 @@ export default function Footer() {
               >
                 <Facebook size={20} />
               </a>
-              <a 
-                href="https://www.youtube.com/@praxisgestaointeligente8514" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-emerald-500 transition-colors"
-              >
-                <Youtube size={20} />
-              </a>
             </div>
           </div>
 
@@ -88,35 +81,29 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone size={18} className="text-emerald-400" />
-                <a href="tel:+5531997150237" className="text-gray-400 hover:text-white transition-colors">
-                  (31) 99715-0237
+                <a href={`tel:+55${whatsappConfig.phone}`} className="text-gray-400 hover:text-white transition-colors">
+                  {whatsappConfig.formattedPhone}
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={18} className="text-emerald-400" />
-                <a href="mailto:contato@sejapraxis.com.br" className="text-gray-400 hover:text-white transition-colors">
-                  contato@sejapraxis.com.br
+                <a href={`mailto:${companyConfig.email}`} className="text-gray-400 hover:text-white transition-colors">
+                  {companyConfig.email}
                 </a>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin size={18} className="text-emerald-400 mt-1" />
                 <div className="text-gray-400 text-sm">
                   <div className="mb-1">
-                    <strong>Ipatinga:</strong><br />
-                    Rua Caviúna, 215 - Horto
-                  </div>
-                  <div>
-                    <strong>Belo Horizonte:</strong><br />
-                    Rua Eduardo Porto, 145 - Cidade Jardim
+                  <strong>Belo Horizonte:</strong><br />
+                  Rua Eduardo Porto, 145 - Cidade Jardim
                   </div>
                 </div>
               </div>
             </div>
-            <ContactModal>
-              <button className="bg-emerald-500 hover:bg-emerald-600 text-white w-full block text-center py-3 rounded-lg font-semibold transition-colors mt-4">
-                Solicitar Contato
-              </button>
-            </ContactModal>
+            <WhatsAppButton className="bg-emerald-500 hover:bg-emerald-600 text-white w-full block text-center py-3 rounded-lg font-semibold transition-colors mt-4">
+              Solicitar Contato
+            </WhatsAppButton>
           </div>
         </div>
 
@@ -132,7 +119,7 @@ export default function Footer() {
             <div className="text-gray-400 text-sm">
               Criado por{" "}
               <a 
-                href="https://b1m.digital" 
+                href="https://www.b1mdigital.com.br" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-emerald-400 hover:text-emerald-300 transition-colors"

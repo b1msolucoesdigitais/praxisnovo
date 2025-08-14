@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
-import ContactModal from "./contact-modal";
+import WhatsAppButton from "./ui/whatsapp-button";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,20 +37,19 @@ export default function Header() {
             <a href="#depoimentos" className="text-gray-300 hover:text-white transition-colors">
               Depoimentos
             </a>
-            <ContactModal>
-              <button type="button" className="text-gray-300 hover:text-white transition-colors focus:outline-none">
-                Contato
-              </button>
-            </ContactModal>
+            <WhatsAppButton 
+              variant="ghost" 
+              className="text-gray-300 hover:text-white transition-colors focus:outline-none"
+            >
+              Contato
+            </WhatsAppButton>
           </nav>
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <ContactModal>
-              <Button className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6">
-                Quero uma consultoria
-              </Button>
-            </ContactModal>
+            <WhatsAppButton className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6">
+              Quero uma consultoria
+            </WhatsAppButton>
           </div>
 
           {/* Mobile Menu Button */}
@@ -75,16 +74,17 @@ export default function Header() {
               <a href="#depoimentos" className="text-gray-300 hover:text-white transition-colors">
                 Depoimentos
               </a>
-              <ContactModal>
-                <button type="button" className="text-gray-300 hover:text-white transition-colors text-left w-full focus:outline-none">
-                  Contato
-                </button>
-              </ContactModal>
-              <ContactModal>
-                <Button className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold w-full mt-4">
-                  Quero uma consultoria
-                </Button>
-              </ContactModal>
+              <WhatsAppButton 
+                variant="ghost" 
+                className="text-gray-300 hover:text-white transition-colors text-left w-full focus:outline-none"
+              >
+                Contato
+              </WhatsAppButton>
+              <WhatsAppButton 
+                className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold w-full mt-4"
+              >
+                Quero uma consultoria
+              </WhatsAppButton>
             </nav>
           </div>
         )}

@@ -12,8 +12,7 @@ export default function HowItWorksSection() {
       details: [
         "Auditoria dos processos financeiros existentes",
         "Identificação de gaps e oportunidades",
-        "Mapeamento de fluxos de informação",
-        "Relatório executivo com recomendações"
+        "Mapeamento de fluxos de informação"
       ],
       duration: "2-3 semanas"
     },
@@ -36,10 +35,9 @@ export default function HowItWorksSection() {
       title: "Monitoramento",
       description: "Acompanhamento contínuo com relatórios mensais",
       details: [
-        "Dashboards executivos em tempo real",
+        "Dashboards executivos personalizados",
         "Reuniões mensais de análise",
-        "Ajustes e otimizações contínuas",
-        "Suporte especializado permanente"
+        "Ajustes e otimizações contínuas"
       ],
       duration: "Contínuo"
     },
@@ -47,12 +45,11 @@ export default function HowItWorksSection() {
       number: "04",
       icon: CheckCircle,
       title: "Resultados",
-      description: "Crescimento sustentável com controle total",
+      description: "Crescimento sustentável com controle inteligente",
       details: [
         "Aumento da margem de lucro",
         "Redução de custos operacionais",
-        "Melhoria na tomada de decisões",
-        "Crescimento com segurança financeira"
+        "Tomada de decisões assertivas"
       ],
       duration: "3-6 meses"
     }
@@ -77,7 +74,7 @@ export default function HowItWorksSection() {
             sua empresa
           </h2>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            Processo estruturado e comprovado para implementar controladoria financeira 
+          Método e processo estruturado, comprovado para implementar controladoria financeira 
             que gera resultados consistentes e sustentáveis
           </p>
         </div>
@@ -138,12 +135,12 @@ export default function HowItWorksSection() {
             </h3>
             <p className="text-gray-300 mb-6">
               Nossa metodologia já transformou a gestão financeira de empresas em todo o Brasil, 
-              gerando crescimento sustentável e aumento médio de 35% na margem de lucro.
+              gerando crescimento sustentável e aumento médio de 20% na margem de lucro.
             </p>
             <div className="flex flex-wrap justify-center gap-8 text-center">
               <div>
                 <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
-                  95%
+                  + 85%
                 </div>
                 <div className="text-sm text-gray-400">Taxa de sucesso</div>
               </div>
@@ -155,9 +152,9 @@ export default function HowItWorksSection() {
               </div>
               <div>
                 <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
-                  24/7
+                  Até 12 meses
                 </div>
-                <div className="text-sm text-gray-400">Suporte especializado</div>
+                <div className="text-sm text-gray-400">Assessoria e Planejamento</div>
               </div>
             </div>
           </div>

@@ -9,10 +9,14 @@ import TestimonialsSection from './components/testimonials-section';
 import ResultsSection from './components/results-section';
 import VideoSection from './components/video-section';
 import Footer from './components/footer';
+import { BodyStartCodes, BodyEndCodes } from './components/third-party-codes';
 
 function App() {
   return (
     <>
+      {/* Códigos no início do body */}
+      <BodyStartCodes />
+      
       <Header />
       <main>
         <HeroSection />
@@ -24,6 +28,9 @@ function App() {
         <VideoSection />
       </main>
       <Footer />
+      
+      {/* Códigos no final do body */}
+      <BodyEndCodes />
     </>
   );
 }

@@ -55,7 +55,7 @@ export default function TestimonialsSection() {
             </div>
             
             <blockquote className="text-lg text-gray-300 mb-6 leading-relaxed">
-              "A PRAXIS nos ajudou a identificar R$ 2,3 milhões em custos desnecessários. Nosso lucro aumentou 35% em 8 meses."
+              "A PRAXIS nos ajudou a identificar R$ 1,3 milhões em custos desnecessários. Nosso lucro aumentou 35% em 8 meses."
             </blockquote>
             
             <div className="flex items-center">
