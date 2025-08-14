@@ -24,7 +24,7 @@ export default function ServicesSection() {
       icon: Shield,
       title: "Gestão de Riscos Financeiros",
       description: "Identificação e mitigação de riscos financeiros, controle de fluxo de caixa e estruturação de reservas para crescimento sustentável.",
-      features: ["Análise de riscos", "Fluxo de caixa otimizado", "Controle inteligente de Capital de Giro (NCG)"],
+      features: ["Análise de riscos", "Fluxo de caixa otimizado", "Controle de Capital de Giro (NCG)"],
       color: "from-purple-500 to-purple-600"
     }
   ];
