@@ -1,0 +1,31 @@
+import React from 'react';
+import './index.css';
+import Header from './components/header';
+import HeroSection from './components/hero-section';
+import ServicesSection from './components/services-section';
+import HowItWorksSection from './components/how-it-works-section';
+import DashboardSection from './components/dashboard-section';
+import TestimonialsSection from './components/testimonials-section';
+import ResultsSection from './components/results-section';
+import VideoSection from './components/video-section';
+import Footer from './components/footer';
+
+function App() {
+  return (
+    <>
+      <Header />
+      <main>
+        <HeroSection />
+        <ServicesSection />
+        <HowItWorksSection />
+        <DashboardSection />
+        <TestimonialsSection />
+        <ResultsSection />
+        <VideoSection />
+      </main>
+      <Footer />
+    </>
+  );
+}
+
+export default App; 
